@@ -3,6 +3,7 @@ const app = express();
 const port = 3000;
 
 //routes
+app.use(cors({origin: 'https://web-service-portfolio-2thj.onrender.com'}))
 app.get('/', (req, res) => {
     const resume = 
     {
